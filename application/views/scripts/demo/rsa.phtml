@@ -1,0 +1,7 @@
+<?php $this->headTitle('Demo', 'PREPEND'); ?>
+<?php $this->headTitle('RSA', 'PREPEND'); ?>
+<?php $this->headTitle('Encryptie & Decryptie', 'PREPEND'); ?><h1>Encryptie &amp; Decryptie</h1><div class="both"><div class="inner"><p>Het RSA algoritme</p><p>Neem voor n een priemgetal. Zoek dan een publieke en private sleutelvoor n met <a	href="<?= $this->url(array('controller' => 'demo', 'action' => 'priemfactoren'), null, true); ?>">ditscript</a>.</p></div></div><div class="input"><div class="inner"><h3>Encryptie</h3>
+		<?= $this->encryptionForm; ?>
+	</div></div><div class="output"><div class="inner"><h3>Decryptie</h3>
+		<?= $this->decryptionForm; ?>
+	</div></div>

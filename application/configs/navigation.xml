@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+	<nav>
+		<home>
+			<label>Home</label>
+			<uri>/</uri>
+		</home>
+		<about>
+			<label>Over</label>
+			<uri>/over</uri>
+		</about>
+		<news>
+			<label>Nieuws</label>
+			<uri>/nieuws</uri>
+		</news>
+		<demo>
+			<label>Demo</label>
+			<uri>/demo</uri>
+		</demo>
+		<paper>
+			<label>Verhandeling</label>
+			<uri>/docs/verhandeling</uri>
+		</paper>
+		<presentation>
+			<label>Presentatie</label>
+			<uri>/docs/presentatie</uri>
+		</presentation>
+		<contact>
+			<label>Contact</label>
+			<uri>/contact</uri>
+		</contact>
+	</nav>
+</configdata>

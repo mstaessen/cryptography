@@ -1,0 +1,8 @@
+<?php $this->headTitle('Demo', 'PREPEND'); ?>
+<?php $this->headTitle('ROT13', 'PREPEND'); ?><h1>ROT13</h1><div class="both"><div class="inner"><p>ROT13 verschuift elke letter 13 plaatsen op naar rechts in hetalfabet. De gebruikte PHP functie is <a	href="http://www.php.net/str_rot13">str_rot13()</a></p></div></div><div class="input"><div class="inner"><h3>Invoer</h3>
+		<?= $this->form; ?>
+	</div></div><div class="output"><div class="inner"><h3>Uitvoer</h3>
+		<?php if(!empty($this->output)): ?>
+		<?= $this->output; ?>
+		<?php endif;?>
+	</div></div>

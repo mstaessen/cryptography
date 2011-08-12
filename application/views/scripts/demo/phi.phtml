@@ -1,0 +1,8 @@
+<?php $this->headTitle('Demo', 'PREPEND'); ?>
+<?php $this->headTitle('Euler Phi functie', 'PREPEND'); ?><h1>Euler &Phi; functie</h1><div class="both"><div class="inner"><p>Dit algoritme berekent de <em>Euler &Phi; functie</em> van een getal.</p></div></div><div class="input"><div class="inner"><h3>Invoer</h3>
+		<?= $this->form; ?>
+	</div></div><div class="output"><div class="inner"><h3>Uitvoer</h3>
+		<?php if(!empty($this->output)): ?>
+		<?= $this->output; ?>
+		<?php endif;?>
+	</div></div>

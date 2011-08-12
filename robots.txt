@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+sitemap: http://www.michielstaessen.be/cryptografie/sitemap/index/format/xml

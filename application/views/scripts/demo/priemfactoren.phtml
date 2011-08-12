@@ -1,0 +1,14 @@
+<?php $this->headTitle('Demo', 'PREPEND'); ?>
+<?php $this->headTitle('RSA', 'PREPEND'); ?>
+<?php $this->headTitle('Zoek priemfactoren e en d', 'PREPEND'); ?><h1>Zoek priemfactoren e en d</h1><div class="both"><div class="inner"><p>Dit algoritme zoekt twee priemfactoren van een getal.</p></div></div><div class="input"><div class="inner"><h3>Invoer</h3>
+		<?= $this->form; ?>
+	</div></div><div class="output"><div class="inner"><h3>Uitvoer</h3>
+		
+		<?php if(isset($this->output) && count($this->output) > 0): ?>
+		<table>	<tr>		<th>e</th>		<th>d</th>	</tr>
+			<?php foreach($this->output as $e => $d): ?>
+			<tr>		<td><?= $e; ?></td>		<td><?= $d; ?></td>	</tr>
+			<?php endforeach; ?>
+		</table>
+		<?php endif;?>
+	</div></div>
