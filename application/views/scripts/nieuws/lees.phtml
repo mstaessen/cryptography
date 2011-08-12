@@ -1,4 +1,4 @@
-<?php $this->headTitle('Nieuws', 'PREPEND'); ?>
+<?php $this->headTitle('Nieuws', 'PREPEND'); ?><?php $this->headMeta()		->appendName('description', 'Een artikel op deze website'); ?>
 <?php $this->headTitle($this->post->title, 'PREPEND'); ?><h1><?= $this->post->title; ?></h1><div class="news-details">
 	<?php $date = new Zend_Date($this->post->date); ?>
 	<span><em>Gepost op <?= $date->toString('EEEE d MMMM YYYY', null, new Zend_Locale('nl_BE')); ?></em></span></div><div class="news-body"><p>

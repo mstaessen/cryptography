@@ -1,4 +1,6 @@
 <?php $this->headTitle('Demo', 'PREPEND'); ?>
+<?php $this->headMeta()
+		->appendName('description', 'Illustraties van toepassingen in de cryptografie'); ?>
 
 <h1>Demo</h1>
 
@@ -8,8 +10,7 @@ enkele demo's in elkaar geknutseld in PHP.</p>
 <h2>Symmetrische Cryptografie</h2>
 
 <dl class="demo">
-	<dt><a
-		href="<?= $this->url(array('controller' => 'demo', 'action' => 'rot13'), null, true); ?>">Caesarvercijfering</a></dt>
+	<dt><a href="<?= $this->url(array('controller' => 'demo', 'action' => 'rot13'), null, true); ?>">Caesarvercijfering</a></dt>
 	<dd>Dit algoritme verschuift elke letter 13 plaatsen. Een eenvoudige
 	substitutie dus.</dd>
 
@@ -18,8 +19,7 @@ enkele demo's in elkaar geknutseld in PHP.</p>
 	besproken in mijn werk. Er is wel een zeer interessant programmaatje te
 	vinden op internet. Waarom het wiel ook opnieuw uitvinden?</dd>
 
-	<dt><!--<a href="<?= $this->url(array('controller' => 'demo', 'action' => 'sdes')); ?>">-->S-DES
-	(Nog niet in gebruik op de nieuwe site...)<!--</a>--></dt>
+	<dt>S-DES (Nog niet in gebruik op de nieuwe site...)</dt>
 	<dd>S-DES is de vereenvoudigde variant van DES en maakt gebruik van
 	substituties en permutaties. DES is het meest gebruikte algoritme
 	binnen de symmetrische cryptografie.</dd>
@@ -33,34 +33,28 @@ enkele demo's in elkaar geknutseld in PHP.</p>
 ongetwijfeld RSA. Hiervoor zijn meerdere demo's gemaakt.</p>
 
 <dl>
-	<dt><a
-		href="<?= $this->url(array('controller' => 'demo', 'action' => 'ggd'));?>">Grootste
+	<dt><a href="<?= $this->url(array('controller' => 'demo', 'action' => 'ggd'));?>">Grootste
 	Gemene Deler (GGD)</a></dt>
 	<dd>Bereken de grootste gemene deler (GGD) van twee grote getallen</dd>
 
-	<dt><a
-		href="<?= $this->url(array('controller' => 'demo', 'action' => 'phi'));?>">Euler
+	<dt><a href="<?= $this->url(array('controller' => 'demo', 'action' => 'phi'));?>">Euler
 	&Phi; functie</a></dt>
 	<dd>Bereken de Euler &Phi; functie voor een getal</dd>
 
-	<dt><a
-		href="<?= $this->url(array('controller' => 'demo', 'action' => 'priemfactoren'));?>">Twee
+	<dt><a href="<?= $this->url(array('controller' => 'demo', 'action' => 'priemfactoren'));?>">Twee
 	priemfactoren (e en d) vinden</a></dt>
 	<dd>Zoek alle mogelijke waarden voor e en d aan de hand van n</dd>
 
-	<dt><a
-		href="<?= $this->url(array('controller' => 'demo', 'action' => 'rsa'));?>">Encryptie
+	<dt><a href="<?= $this->url(array('controller' => 'demo', 'action' => 'rsa'));?>">Encryptie
 	&amp; Decryptie</a></dt>
 	<dd>De eigenlijke versleutelingsmechanismen</dd>
 </dl>
 
 <h3>Hashing</h3>
 <dl>
-	<dt><a
-		href="<?= $this->url(array('controller' => 'demo', 'action' => 'md5'), null, true); ?>">MD5</a></dt>
+	<dt><a href="<?= $this->url(array('controller' => 'demo', 'action' => 'md5'), null, true); ?>">MD5</a></dt>
 	<dd>Het MD5 Hashalgoritme</dd>
 
-	<dt><a
-		href="<?= $this->url(array('controller' => 'demo', 'action' => 'sha1'), null, true); ?>">SHA1</a></dt>
+	<dt><a href="<?= $this->url(array('controller' => 'demo', 'action' => 'sha1'), null, true); ?>">SHA1</a></dt>
 	<dd>Het SHA1 Hashalgoritme</dd>
 </dl>

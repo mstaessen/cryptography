@@ -1,8 +1,1 @@
-<?php $this->headTitle('Demo', 'PREPEND'); ?>
-<?php $this->headTitle('SHA1', 'PREPEND'); ?><h1>SHA1</h1><div class="both"><div class="inner"><p>SHA1 Hashing algoritme</p></div></div><div class="input"><div class="inner"><h3>Invoer</h3>
-		<?= $this->form; ?>
-	</div></div><div class="output"><div class="inner"><h3>Uitvoer</h3>
-		<?php if(!empty($this->output)): ?>
-		<?= $this->output; ?>
-		<?php endif;?>
-	</div></div>
+<?php $this->headTitle('Demo', 'PREPEND'); ?><?php $this->headTitle('SHA1', 'PREPEND'); ?><?php $this->headMeta()		->appendName('description', 'Het SHA1 hashing algoritme'); ?>		<h1>SHA1</h1><div class="both">	<div class="inner">		<p>			SHA1 Hashing algoritme		</p>	</div></div><div class="input">	<div class="inner">		<h3>Invoer</h3>		<?php $this->form; ?>	</div></div><div class="output">	<div class="inner">		<h3>Uitvoer</h3>		<?php if(!empty($this->output)): ?>			<?php $this->output; ?>		<?php endif;?>	</div></div>

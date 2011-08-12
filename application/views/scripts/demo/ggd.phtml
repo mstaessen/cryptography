@@ -1,8 +1,2 @@
-<?php $this->headTitle('Demo', 'PREPEND'); ?>
-<?php $this->headTitle('Grootste Gemene Deler', 'PREPEND'); ?><h1>Grootste Gemene Deler</h1><div class="both"><div class="inner"><p>Dit algoritme berekent de <em>grootste gemene deler</em> van tweegetallen met behulp van <a	href="http://nl.wikipedia.org/wiki/Algoritme_van_Euclides"></a></p></div></div><div class="input"><div class="inner"><h3>Invoer</h3>
-		<?= $this->form; ?>
-	</div></div><div class="output"><div class="inner"><h3>Uitvoer</h3>
-		<?php if(!empty($this->output)): ?>
-		<?= $this->output; ?>
-		<?php endif;?>
-	</div></div>
+<?php $this->headTitle('Demo', 'PREPEND'); ?><?php $this->headTitle('Grootste Gemene Deler', 'PREPEND'); ?><?php $this->headMeta()		->appendName('description', 'Demo van de grootste gemene deler'); ?>
+<h1>Grootste Gemene Deler</h1><div class="both">	<div class="inner">		<p>			Dit algoritme berekent de <em>grootste gemene deler</em> van twee getallen met 			behulp van het <a href="http://nl.wikipedia.org/wiki/Algoritme_van_Euclides">algoritme van Euclides</a>		</p>	</div></div><div class="input">	<div class="inner">		<h3>Invoer</h3>		<?php echo $this->form; ?>	</div></div><div class="output">	<div class="inner">		<h3>Uitvoer</h3>		<?php if(!empty($this->output)): ?>			<?php echo $this->output; ?>		<?php endif;?>	</div></div>

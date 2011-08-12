@@ -1,4 +1,6 @@
-<span style="color: red"><?= $this->msg ?></span>
+<?php $this->headTitle('Contact', PREPEND); ?>
+<?php $this->headMeta()
+		->appendName('description', 'Contactformulier'); ?>
 
-<?= $this->form?>
-
+<span style="color: red"><?php echo $this->msg ?></span>
+<?php echo $this->form?>
