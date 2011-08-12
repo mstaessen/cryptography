@@ -119,7 +119,8 @@ class DemoController extends Zend_Controller_Action
         {
             $formData = $this->getRequest()->getPost();
             $method = $this->getRequest()->getPost('submit', null);
-            // encryption            if($method == 'versleutelen')
+            // encryption
+			if($method == 'versleutelen')
             {
                 if($encryptionForm->isValid($formData))
                 {
@@ -132,7 +133,9 @@ class DemoController extends Zend_Controller_Action
                 {
                     $encryptionForm->populate($formData);
                 }
-            } // decryption            elseif($method == 'ontcijferen')
+            }
+            // decryption 
+			elseif($method == 'ontcijferen')
             {
                 if($decryptionForm->isValid($formData))
                 {

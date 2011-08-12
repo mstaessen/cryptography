@@ -3,31 +3,38 @@
 	<nav>
 		<home>
 			<label>Home</label>
-			<uri>/</uri>
+			<controller>index</controller>
+			<action>index</action>
 		</home>
 		<about>
 			<label>Over</label>
-			<uri>/over</uri>
+			<controller>over</controller>
+			<action>index</action>
 		</about>
 		<news>
 			<label>Nieuws</label>
-			<uri>/nieuws</uri>
+			<controller>nieuws</controller>
+			<action>index</action>
 		</news>
 		<demo>
 			<label>Demo</label>
-			<uri>/demo</uri>
+			<controller>demo</controller>
+			<action>index</action>
 		</demo>
 		<paper>
 			<label>Verhandeling</label>
-			<uri>/docs/verhandeling</uri>
+			<controller>docs</controller>
+			<action>verhandeling</action>
 		</paper>
 		<presentation>
 			<label>Presentatie</label>
-			<uri>/docs/presentatie</uri>
+			<controller>docs</controller>
+			<action>presentatie</action>
 		</presentation>
 		<contact>
 			<label>Contact</label>
-			<uri>/contact</uri>
+			<controller>contact</controller>
+			<action>index</action>
 		</contact>
 	</nav>
 </configdata>
